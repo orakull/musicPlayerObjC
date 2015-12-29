@@ -14,6 +14,7 @@
 		BC1370FB1C32BB4E00021E39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC1370F91C32BB4E00021E39 /* LaunchScreen.storyboard */; };
 		BC1371041C32BD5800021E39 /* MusicTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BC1371031C32BD5800021E39 /* MusicTableVC.m */; };
 		BC1371081C32C7A100021E39 /* Song.m in Sources */ = {isa = PBXBuildFile; fileRef = BC1371071C32C7A100021E39 /* Song.m */; };
+		BC13710B1C32E2AF00021E39 /* SongVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BC13710A1C32E2AF00021E39 /* SongVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		BC1371031C32BD5800021E39 /* MusicTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicTableVC.m; sourceTree = "<group>"; };
 		BC1371061C32C7A100021E39 /* Song.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Song.h; sourceTree = "<group>"; };
 		BC1371071C32C7A100021E39 /* Song.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Song.m; sourceTree = "<group>"; };
+		BC1371091C32E2AF00021E39 /* SongVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SongVC.h; sourceTree = "<group>"; };
+		BC13710A1C32E2AF00021E39 /* SongVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SongVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,11 +64,13 @@
 		BC1370EA1C32BB4D00021E39 /* musicPlayerObjC */ = {
 			isa = PBXGroup;
 			children = (
-				BC1371021C32BD5800021E39 /* MusicTableVC.h */,
-				BC1371031C32BD5800021E39 /* MusicTableVC.m */,
 				BC1371061C32C7A100021E39 /* Song.h */,
 				BC1371071C32C7A100021E39 /* Song.m */,
 				BC1370F41C32BB4D00021E39 /* Main.storyboard */,
+				BC1371021C32BD5800021E39 /* MusicTableVC.h */,
+				BC1371031C32BD5800021E39 /* MusicTableVC.m */,
+				BC1371091C32E2AF00021E39 /* SongVC.h */,
+				BC13710A1C32E2AF00021E39 /* SongVC.m */,
 				BC1371051C32BD7200021E39 /* others */,
 				BC1370EB1C32BB4D00021E39 /* Supporting Files */,
 			);
@@ -166,6 +171,7 @@
 				BC1371081C32C7A100021E39 /* Song.m in Sources */,
 				BC1371041C32BD5800021E39 /* MusicTableVC.m in Sources */,
 				BC1370F01C32BB4D00021E39 /* AppDelegate.m in Sources */,
+				BC13710B1C32E2AF00021E39 /* SongVC.m in Sources */,
 				BC1370ED1C32BB4D00021E39 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

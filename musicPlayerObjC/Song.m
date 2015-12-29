@@ -10,15 +10,6 @@
 
 @implementation Song
 
-//- (instancetype)initWithCoder:(NSCoder *)coder
-//{
-//	self = [super initWithCoder:coder];
-//	if (self) {
-//		<#statements#>
-//	}
-//	return self;
-//}
-
 - (instancetype)initWithArtist:(NSString *)artist title:(NSString *)title picUrl:(NSString *)picUrl demoUrl:(NSString *)demoUrl {
 	self = [super init];
 	if (self) {

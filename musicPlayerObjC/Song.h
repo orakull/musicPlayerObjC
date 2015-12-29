@@ -7,13 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface Song : NSObject
 
-@property NSString* artist;
-@property NSString* title;
-@property NSString* picUrl;
-@property NSString* demoUrl;
+@property (nonatomic) NSString* artist;
+@property (nonatomic) NSString* title;
+@property (nonatomic) NSString* picUrl;
+@property (nonatomic) NSString* demoUrl;
+@property (nonatomic) UIImage* image;
 
 - (instancetype)initWithArtist:(NSString*)artist title:(NSString*)title picUrl:(NSString*)picUrl demoUrl:(NSString*)demoUrl;
 
