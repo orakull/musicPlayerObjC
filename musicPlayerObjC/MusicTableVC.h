@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  MusicTableVC.h
 //  musicPlayerObjC
 //
 //  Created by Руслан Ольховка on 29.12.15.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface MusicTableVC : UITableViewController
 
 @end
-

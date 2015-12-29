@@ -9,10 +9,11 @@
 /* Begin PBXBuildFile section */
 		BC1370ED1C32BB4D00021E39 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BC1370EC1C32BB4D00021E39 /* main.m */; };
 		BC1370F01C32BB4D00021E39 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BC1370EF1C32BB4D00021E39 /* AppDelegate.m */; };
-		BC1370F31C32BB4D00021E39 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC1370F21C32BB4D00021E39 /* ViewController.m */; };
 		BC1370F61C32BB4D00021E39 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC1370F41C32BB4D00021E39 /* Main.storyboard */; };
 		BC1370F81C32BB4E00021E39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC1370F71C32BB4E00021E39 /* Assets.xcassets */; };
 		BC1370FB1C32BB4E00021E39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC1370F91C32BB4E00021E39 /* LaunchScreen.storyboard */; };
+		BC1371041C32BD5800021E39 /* MusicTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BC1371031C32BD5800021E39 /* MusicTableVC.m */; };
+		BC1371081C32C7A100021E39 /* Song.m in Sources */ = {isa = PBXBuildFile; fileRef = BC1371071C32C7A100021E39 /* Song.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +21,14 @@
 		BC1370EC1C32BB4D00021E39 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BC1370EE1C32BB4D00021E39 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BC1370EF1C32BB4D00021E39 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		BC1370F11C32BB4D00021E39 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		BC1370F21C32BB4D00021E39 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		BC1370F51C32BB4D00021E39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BC1370F71C32BB4E00021E39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC1370FA1C32BB4E00021E39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC1370FC1C32BB4E00021E39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC1371021C32BD5800021E39 /* MusicTableVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicTableVC.h; sourceTree = "<group>"; };
+		BC1371031C32BD5800021E39 /* MusicTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicTableVC.m; sourceTree = "<group>"; };
+		BC1371061C32C7A100021E39 /* Song.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Song.h; sourceTree = "<group>"; };
+		BC1371071C32C7A100021E39 /* Song.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Song.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,14 +61,12 @@
 		BC1370EA1C32BB4D00021E39 /* musicPlayerObjC */ = {
 			isa = PBXGroup;
 			children = (
-				BC1370EE1C32BB4D00021E39 /* AppDelegate.h */,
-				BC1370EF1C32BB4D00021E39 /* AppDelegate.m */,
-				BC1370F11C32BB4D00021E39 /* ViewController.h */,
-				BC1370F21C32BB4D00021E39 /* ViewController.m */,
+				BC1371021C32BD5800021E39 /* MusicTableVC.h */,
+				BC1371031C32BD5800021E39 /* MusicTableVC.m */,
+				BC1371061C32C7A100021E39 /* Song.h */,
+				BC1371071C32C7A100021E39 /* Song.m */,
 				BC1370F41C32BB4D00021E39 /* Main.storyboard */,
-				BC1370F71C32BB4E00021E39 /* Assets.xcassets */,
-				BC1370F91C32BB4E00021E39 /* LaunchScreen.storyboard */,
-				BC1370FC1C32BB4E00021E39 /* Info.plist */,
+				BC1371051C32BD7200021E39 /* others */,
 				BC1370EB1C32BB4D00021E39 /* Supporting Files */,
 			);
 			path = musicPlayerObjC;
@@ -77,6 +78,18 @@
 				BC1370EC1C32BB4D00021E39 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BC1371051C32BD7200021E39 /* others */ = {
+			isa = PBXGroup;
+			children = (
+				BC1370EE1C32BB4D00021E39 /* AppDelegate.h */,
+				BC1370EF1C32BB4D00021E39 /* AppDelegate.m */,
+				BC1370F71C32BB4E00021E39 /* Assets.xcassets */,
+				BC1370F91C32BB4E00021E39 /* LaunchScreen.storyboard */,
+				BC1370FC1C32BB4E00021E39 /* Info.plist */,
+			);
+			name = others;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -110,6 +123,7 @@
 				TargetAttributes = {
 					BC1370E71C32BB4D00021E39 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 8NXXYF76CS;
 					};
 				};
 			};
@@ -149,7 +163,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC1370F31C32BB4D00021E39 /* ViewController.m in Sources */,
+				BC1371081C32C7A100021E39 /* Song.m in Sources */,
+				BC1371041C32BD5800021E39 /* MusicTableVC.m in Sources */,
 				BC1370F01C32BB4D00021E39 /* AppDelegate.m in Sources */,
 				BC1370ED1C32BB4D00021E39 /* main.m in Sources */,
 			);
@@ -261,10 +276,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = musicPlayerObjC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.orakull.musicPlayerObjC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -272,10 +291,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = musicPlayerObjC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.orakull.musicPlayerObjC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
