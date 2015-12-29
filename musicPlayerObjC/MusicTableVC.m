@@ -121,7 +121,7 @@
 	if (svc) {
 		UITableViewCell *cell = sender;
 		if (cell) {
-			int index = [self.tableView indexPathForCell:cell].row;
+			int index = (int)[self.tableView indexPathForCell:cell].row;
 			id song = [songs objectAtIndex:index];
 			svc.song = song;
 		}

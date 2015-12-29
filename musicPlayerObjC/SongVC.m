@@ -20,7 +20,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-	self.imageView.image = self.song.image;
+	self.song.delegate = self;
+	
+	self.imageView.image = self.song.image ? self.song.image : [UIImage imageNamed:@"noAlbumArt"];
 	self.title = self.song.title;
 	
 	NSURL *url = [[NSURL alloc] initWithString:self.song.demoUrl];
@@ -69,6 +71,12 @@
 - (NSString*)stringFromTime:(double)time {
 	int t = time;
 	return [NSString stringWithFormat:@"%02i:%02i", t / 60 , t % 60];
+}
+
+#pragma mark - Song delegate
+
+-(void) imageLoaded {
+	self.imageView.image = self.song.image;
 }
 
 #pragma mark - Actions

@@ -7,7 +7,7 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Music TableVC-->
+        <!--La musique-->
         <scene sceneID="fPc-W9-fHX">
             <objects>
                 <tableViewController id="leC-1x-fyq" customClass="MusicTableVC" sceneMemberID="viewController">
@@ -70,7 +70,7 @@
                             <outlet property="delegate" destination="leC-1x-fyq" id="fCa-Dm-g6L"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="7Ea-8K-nKI"/>
+                    <navigationItem key="navigationItem" title="La musique" id="7Ea-8K-nKI"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dUc-oD-itj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

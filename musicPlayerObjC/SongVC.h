@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "Song.h"
 
-@interface SongVC : UIViewController
+@interface SongVC : UIViewController <SongDelegate>
 
 @property (weak, nonatomic) Song *song;
 

@@ -21,4 +21,9 @@
 	return self;
 }
 
+- (void)setImage:(UIImage *)image {
+	_image = image;
+	[self.delegate imageLoaded];
+}
+
 @end
