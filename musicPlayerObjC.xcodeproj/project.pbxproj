@@ -327,6 +327,7 @@
 				BC1371011C32BB4E00021E39 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
