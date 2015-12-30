@@ -13,6 +13,12 @@
 	AVPlayer *player;
 	AVPlayerItem *playerItem;
 	CADisplayLink *updater;
+	
+	__weak IBOutlet UIImageView *imageView;
+	__weak IBOutlet UIButton *playPauseButton;
+	__weak IBOutlet UISlider *progressSlider;
+	__weak IBOutlet UILabel *positionLabel;
+	__weak IBOutlet UILabel *durationLabel;
 }
 @end
 
@@ -22,7 +28,7 @@
     [super viewDidLoad];
 	self.song.delegate = self;
 	
-	self.imageView.image = self.song.image ? self.song.image : [UIImage imageNamed:@"noAlbumArt"];
+	imageView.image = self.song.image ? self.song.image : [UIImage imageNamed:@"noAlbumArt"];
 	self.title = self.song.title;
 	
 	NSURL *url = [[NSURL alloc] initWithString:self.song.demoUrl];
@@ -44,14 +50,14 @@
 }
 
 - (void)trackAudio {
-	if (self.progressSlider.highlighted) {
+	if (progressSlider.highlighted) {
 		
 	} else {
-		self.positionLabel.text = [self stringFromTime:player.currentTime.value / player.currentTime.timescale];
+		positionLabel.text = [self stringFromTime:player.currentTime.value / player.currentTime.timescale];
 		if (playerItem.duration.value > 0) {
 			Float64 currentSeconds = (Float64)player.currentTime.value / (Float64)player.currentTime.timescale;
 			Float64 durationSeconds = (Float64)playerItem.duration.value / (Float64)playerItem.duration.timescale;
-			self.progressSlider.value = currentSeconds / durationSeconds;
+			progressSlider.value = currentSeconds / durationSeconds;
 		}
 	}
 }
@@ -60,11 +66,11 @@
 	if ([keyPath isEqualToString:@"status"]) {
 		if (playerItem.status == AVPlayerItemStatusReadyToPlay) {
 			double seconds = playerItem.duration.value / playerItem.duration.timescale;
-			self.durationLabel.text = [self stringFromTime:seconds];
+			durationLabel.text = [self stringFromTime:seconds];
 		}
 	}
 	if ([keyPath isEqualToString:@"rate"]) {
-		self.playPauseButton.selected = player.rate == 1.0;
+		playPauseButton.selected = player.rate == 1.0;
 	}
 }
 
@@ -76,13 +82,13 @@
 #pragma mark - Song delegate
 
 -(void) imageLoaded {
-	self.imageView.image = self.song.image;
+	imageView.image = self.song.image;
 }
 
 #pragma mark - Actions
 
 - (IBAction)playPause {
-	if (self.playPauseButton.selected) {
+	if (playPauseButton.selected) {
 		[player pause];
 	} else {
 		[player play];
@@ -90,7 +96,7 @@
 }
 
 - (IBAction)sliderTouchUpInside {
-	Float64 seconds = self.progressSlider.value * (Float64)playerItem.duration.value / (Float64)playerItem.duration.timescale;
+	Float64 seconds = progressSlider.value * (Float64)playerItem.duration.value / (Float64)playerItem.duration.timescale;
 	CMTime time = CMTimeMakeWithSeconds(seconds, playerItem.duration.timescale);
 	[player seekToTime:time];
 }

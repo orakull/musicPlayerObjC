@@ -27,14 +27,14 @@
                                             <rect key="frame" x="74" y="6" width="31.5" height="19.5"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="XxW-fw-9Bt">
                                             <rect key="frame" x="74" y="25.5" width="40.5" height="13.5"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="noAlbumArt" id="xX1-eL-61U">
@@ -191,11 +191,11 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="durationLabel" destination="GcE-wX-DI3" id="hNb-bC-Daz"/>
-                        <outlet property="imageView" destination="yWr-ux-gmr" id="3vG-AG-Vp8"/>
-                        <outlet property="playPauseButton" destination="I7T-Kn-7ch" id="MCl-83-bGm"/>
-                        <outlet property="positionLabel" destination="KC9-Ag-h9x" id="Drv-ei-ZXs"/>
-                        <outlet property="progressSlider" destination="CCP-WD-QOs" id="cTk-BZ-DOg"/>
+                        <outlet property="durationLabel" destination="GcE-wX-DI3" id="rAJ-Ds-OSi"/>
+                        <outlet property="imageView" destination="yWr-ux-gmr" id="WH4-5W-nii"/>
+                        <outlet property="playPauseButton" destination="I7T-Kn-7ch" id="p08-a1-KEf"/>
+                        <outlet property="positionLabel" destination="KC9-Ag-h9x" id="5sx-Xb-uQ6"/>
+                        <outlet property="progressSlider" destination="CCP-WD-QOs" id="niM-m8-qGM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J4X-5u-Pbb" userLabel="First Responder" sceneMemberID="firstResponder"/>
