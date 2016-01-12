@@ -64,14 +64,9 @@
 		BC1370EA1C32BB4D00021E39 /* musicPlayerObjC */ = {
 			isa = PBXGroup;
 			children = (
-				BC1371061C32C7A100021E39 /* Song.h */,
-				BC1371071C32C7A100021E39 /* Song.m */,
-				BC1370F41C32BB4D00021E39 /* Main.storyboard */,
-				BC1371021C32BD5800021E39 /* MusicTableVC.h */,
-				BC1371031C32BD5800021E39 /* MusicTableVC.m */,
-				BC1371091C32E2AF00021E39 /* SongVC.h */,
-				BC13710A1C32E2AF00021E39 /* SongVC.m */,
-				BC1371051C32BD7200021E39 /* others */,
+				BC93962E1C45436C001433F9 /* Entities */,
+				BC93962D1C454346001433F9 /* View Controllers */,
+				BC93962F1C454392001433F9 /* Storyboards */,
 				BC1370EB1C32BB4D00021E39 /* Supporting Files */,
 			);
 			path = musicPlayerObjC;
@@ -81,20 +76,41 @@
 			isa = PBXGroup;
 			children = (
 				BC1370EC1C32BB4D00021E39 /* main.m */,
+				BC1370EE1C32BB4D00021E39 /* AppDelegate.h */,
+				BC1370EF1C32BB4D00021E39 /* AppDelegate.m */,
+				BC1370F71C32BB4E00021E39 /* Assets.xcassets */,
+				BC1370FC1C32BB4E00021E39 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		BC1371051C32BD7200021E39 /* others */ = {
+		BC93962D1C454346001433F9 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				BC1370EE1C32BB4D00021E39 /* AppDelegate.h */,
-				BC1370EF1C32BB4D00021E39 /* AppDelegate.m */,
-				BC1370F71C32BB4E00021E39 /* Assets.xcassets */,
-				BC1370F91C32BB4E00021E39 /* LaunchScreen.storyboard */,
-				BC1370FC1C32BB4E00021E39 /* Info.plist */,
+				BC1371021C32BD5800021E39 /* MusicTableVC.h */,
+				BC1371031C32BD5800021E39 /* MusicTableVC.m */,
+				BC1371091C32E2AF00021E39 /* SongVC.h */,
+				BC13710A1C32E2AF00021E39 /* SongVC.m */,
 			);
-			name = others;
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		BC93962E1C45436C001433F9 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				BC1371061C32C7A100021E39 /* Song.h */,
+				BC1371071C32C7A100021E39 /* Song.m */,
+			);
+			name = Entities;
+			sourceTree = "<group>";
+		};
+		BC93962F1C454392001433F9 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				BC1370F91C32BB4E00021E39 /* LaunchScreen.storyboard */,
+				BC1370F41C32BB4D00021E39 /* Main.storyboard */,
+			);
+			name = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
